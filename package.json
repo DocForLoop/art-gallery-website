@@ -25,7 +25,6 @@
     "vite": "^6.3.5"
   },
   "dependencies": {
-    "leaflet": "^1.9.4",
-    "leaflet-control-geocoder": "^3.2.0"
+    "leaflet": "^1.9.4"
   }
 }
