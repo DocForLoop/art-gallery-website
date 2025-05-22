@@ -1,1 +1,26 @@
 @use './functions' as *;
+
+@mixin btn-base {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-btn);
+    font-weight: var(--fw-2);
+    letter-spacing: var(--ls-btn);
+    color: var(--clr-light);
+    text-transform: uppercase;
+    display: inline-flex;
+}
+
+@mixin btn-text {
+    padding-block: 24px;
+    padding-inline-start: 32px;
+    padding-inline-end: 35px;
+    display: inline-block;
+    background-color: var(--clr-dark);
+    transition: background-color 0.3s;
+}
+
+@mixin btn-icon {
+    padding: 24px;
+    background-color: var(--clr-primary);
+    transition: background-color 0.3s;
+}
