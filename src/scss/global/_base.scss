@@ -15,12 +15,15 @@ body {
     font-family: var(--ff-secondary);
     font-size: var(--fs-body);
     font-weight: var(--fw-1);
-    line-height: var(--lh-body); 
+    line-height: var(--lh-body);
+    color: var(--clr-secondary);
 }
 
 h1, h2 {
     font-family: var(--ff-primary);
+    font-weight: var(--fw-2);
     line-height: var(--lh-h1-h2);
+    color: var(--clr-dark);
     text-transform: uppercase;
 }
 

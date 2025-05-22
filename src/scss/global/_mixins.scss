@@ -5,16 +5,23 @@
     font-size: var(--fs-btn);
     font-weight: var(--fw-2);
     letter-spacing: var(--ls-btn);
+    line-height: normal;
     color: var(--clr-light);
     text-transform: uppercase;
     display: inline-flex;
+    align-self: flex-start;
+    white-space: nowrap;
+
+    &:focus-visible {
+        outline: rem(3) solid var(--clr-dark);
+        outline-offset: rem(3);
+    }
 }
 
 @mixin btn-text {
     padding-block: 24px;
     padding-inline-start: 32px;
     padding-inline-end: 35px;
-    display: inline-block;
     background-color: var(--clr-dark);
     transition: background-color 0.3s;
 }
@@ -22,5 +29,6 @@
 @mixin btn-icon {
     padding: 24px;
     background-color: var(--clr-primary);
+    flex-shrink: 0;
     transition: background-color 0.3s;
 }

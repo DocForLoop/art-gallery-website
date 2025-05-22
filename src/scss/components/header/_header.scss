@@ -1,2 +1,65 @@
 @use '@scss/global/functions' as *;
 @use '@scss/global/mixins' as m;
+
+.home-page {
+    min-block-size: 100vh;
+
+    &__wrapper {
+        inline-size: 100%;
+        max-inline-size: rem(1650);
+    }
+}
+
+.hero {
+
+    &__decor {
+        display: none;
+    }
+
+    &__img {
+        inline-size: 100%;
+        block-size: auto;
+    }
+
+    &__content {
+        padding-inline: 16px;
+        align-self: center;
+    }
+
+    &__title {
+        font-size: var(--fs-home-h1-mob-tab);
+        max-inline-size: 11ch;
+    }
+
+    &__desc {
+        max-inline-size: 30ch;
+    }
+}
+
+.link-btn {
+    @include m.btn-base;
+
+    &__text {
+        @include m.btn-text;
+    }
+    
+    &__icon {
+        @include m.btn-icon;
+    }
+
+    &__icon-img {
+        inline-size: rem(8);
+        block-size: rem(24);
+    }
+
+    &:hover, &:focus-visible {
+
+        .link-btn__text {
+            background-color: var(--clr-primary);
+        }
+
+        .link-btn__icon {
+            background-color: var(--clr-dark);
+        }
+    }
+}
