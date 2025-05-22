@@ -24,40 +24,45 @@
     <!-- <meta name="twitter:image" content="preview.jpg"> -->
     <script type="module" src="src/main.ts"></script>
   </head>
-  <body>
-    <div>
-      <main>
-        <section aria-label="Location Map and Navigation">
+  <body class="location-page">
+    <div class="location-page__wrapper">
+
+      <main class="location">
+
+        <section class="location__content" aria-label="Location Map and Navigation">
           <h1 class="sr-only">Modern Art Gallery location information</h1>
 
-          <div id="map" aria-describedby="map-description"></div>
+          <div class="location__map" id="map" aria-describedby="map-description"></div>
           
           <p id="map-description" class="sr-only">
             Interactive map showing the location of the Modern Art Gallery at 99 King Street, Newport, RI 02840, United States.
           </p>
   
-          <a href="/index.html">
-            <span>
-              <img src="/src/assets/images/icon-arrow-left.svg" 
+          <a class="btn-link" href="/index.html">
+            <span class="btn-link__icon">
+              <img class="btn-link__icon-img" src="/src/assets/images/icon-arrow-left.svg" 
                     alt="" width="8" height="24">
             </span>
             
-            <span>Back to Home</span>
+            <span class="btn-link__text">Back to Home</span>
           </a>
         </section>
 
-        <section>
-          <h2>Our location</h2>
+        <section class="location__details">
+          <h2 class="location__title">Our location</h2>
 
-          <div>
-            <address>
-              <div>99 King Street</div>
-              <div>Newport</div>
-              <div>RI 02840</div>
-              <div>United States of America</div>
+          <div class="location__info">
+
+            <address class="location__address">
+              <div class="location__street">99 King Street</div>
+              <div class="location__line-group">
+                <div>Newport</div>
+                <div>RI 02840</div>
+                <div>United States of America</div>
+              </div>
             </address>
 
-            <p>Our newly opened gallery is located near the Edward King House on 99 King 
+            <p class="location__desc">Our newly opened gallery is located near the Edward King House on 99 King 
                 Street, the Modern Art Gallery is free to all visitors and open seven days 
                 a week from <time datetime="08:00">8am</time> to <time datetime="21:00">9pm</time>.
             </p>
@@ -65,24 +70,26 @@
         </section>
       </main>
 
-      <footer>
-        <div>
-          <a href="/index.html">
-            <img src="/src/assets/images/logo-dark.svg" 
+      <footer class="footer">
+        <div class="footer__content">
+
+          <a class="footer__logo" href="/index.html">
+            <img class="footer__logo-img" src="/src/assets/images/logo-dark.svg" 
               alt="Home of the Modern Art Gallery" 
               width="110" height="40" loading="lazy" decoding="async">
           </a>
 
-          <p>The Modern Art Gallery is free to all visitors and open seven days a week from 
+          <p class="footer__desc">The Modern Art Gallery is free to all visitors and open seven days a week from 
             <time datetime="08:00">8am</time> to <time datetime="21:00">9pm</time>. Find us at 99 King Street, Newport, USA.
           </p>
         </div>
 
-        <nav aria-label="Social Media Links">
-          <ul>
+        <nav class="footer__social-nav" aria-label="Social Media Links">
+          <ul class="footer__social-list">
+
             <li>
-              <a href="https://www.facebook.com" aria-label="Modern Art Gallery on Facebook">
-                <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+              <a class="footer__social-link" href="https://www.facebook.com" aria-label="Modern Art Gallery on Facebook">
+                <svg class="footer__social-icon" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
                   <path d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 
                   1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 
                   2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 
@@ -93,8 +100,8 @@
             </li>
 
             <li>
-              <a href="https://www.instagram.com" aria-label="Modern Art Gallery on Instagram">
-                <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+              <a class="footer__social-link" href="https://www.instagram.com" aria-label="Modern Art Gallery on Instagram">
+                <svg class="footer__social-icon" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
                   <path d="M10 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.975 1.409 4.099 4.099.048 1.054.057 
                   1.37.057 4.04 0 2.672-.01 2.988-.057 4.042-.124 2.687-1.387 3.975-4.1 
                   4.099-1.054.048-1.37.058-4.041.058-2.67 0-2.987-.01-4.04-.058-2.718-.124-3.977-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 
@@ -109,8 +116,8 @@
             </li>
 
             <li>
-              <a href="https://www.twitter.com" aria-label="Modern Art Gallery on Twitter">
-                <svg width="20" height="17" viewBox="0 0 20 17" aria-hidden="true">
+              <a class="footer__social-link" href="https://www.twitter.com" aria-label="Modern Art Gallery on Twitter">
+                <svg class="footer__social-icon footer__social-icon--twitter" width="20" height="17" viewBox="0 0 20 17" aria-hidden="true">
                   <path d="M20 2.172a8.192 8.192 0 0 1-2.357.646 4.11 4.11 0 0 0 1.805-2.27 8.22 8.22 0 0 
                   1-2.606.996A4.096 4.096 0 0 0 13.847.248c-2.65 0-4.596 2.472-3.998 5.037A11.648 11.648 0 0 1 
                   1.392 1a4.109 4.109 0 0 0 1.27 5.478 4.086 4.086 0 0 1-1.858-.513c-.045 1.9 1.318 3.679 3.291 
