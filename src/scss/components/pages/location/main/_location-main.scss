@@ -68,7 +68,8 @@
         block-size: fluid(550, 600, 375, 768, rem);
 
         &:focus-visible {
-          outline: rem(3) solid var(--clr-dark);
+          outline: rem(3) solid var(--clr-primary);
+          outline-offset: rem(3);
         }
     }
 

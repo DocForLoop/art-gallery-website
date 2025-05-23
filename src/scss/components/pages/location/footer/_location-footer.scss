@@ -1,2 +1,21 @@
 @use '@scss/global/functions' as *;
 @use '@scss/global/mixins' as m;
+
+.location-page {
+
+    .footer {
+        background-color: var(--clr-primary);
+
+        &__desc {
+            color: var(--clr-dark)
+        }
+
+        &__social-link {
+            color: var(--clr-dark);
+
+            &:hover, &:focus-visible {
+                color: var(--clr-light);
+            }
+        }
+    }
+}
