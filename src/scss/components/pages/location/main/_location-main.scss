@@ -1,2 +1,104 @@
 @use '@scss/global/functions' as *;
 @use '@scss/global/mixins' as m;
+
+.location-page {
+    min-block-size: 100vh;
+
+    &__wrapper {
+        inline-size: 100%;
+        max-inline-size: rem(1650);
+    }
+
+    & .location__map-content .link-btn {
+        position: absolute;
+        inset-block-start: 0;
+        z-index: 1000;
+    }
+}
+
+.sr-only {
+    @include m.sr-only;
+}
+
+.leaflet-popup-tip {
+    display: none;
+}
+
+.leaflet-tile-pane {
+    
+    filter: grayscale(100%);
+}
+
+.leaflet-popup-content-wrapper b {
+    font-weight: 700;
+    white-space: nowrap;
+    
+}
+
+.leaflet-popup-close-button {
+    
+    &:focus-visible {
+        outline: rem(3) solid var(--clr-dark);
+    }
+}
+
+.leaflet-marker-icon:focus-visible {
+    outline: rem(3) solid var(--clr-dark);
+    outline-offset: rem(3);
+}
+
+.leaflet-control-zoom.leaflet-control-zoom a {
+    transition: background-color 0.3s;
+}
+
+.leaflet-control-zoom.leaflet-control-zoom a:hover,
+.leaflet-control-zoom.leaflet-control-zoom a:focus-visible {
+	background-color: var(--clr-primary);
+    outline: none;
+}
+
+.leaflet-control a:focus-visible{
+    outline: rem(3) solid var(--clr-dark);
+}
+
+.location {
+    position: relative;
+    
+    &__map {
+        block-size: fluid(550, 600, 375, 768, rem);
+
+        &:focus-visible {
+          outline: rem(3) solid var(--clr-dark);
+        }
+    }
+
+    &__details {
+        background-color: var(--clr-dark);
+        color: var(--clr-light);
+        padding-inline: fluid(16, 40, 375, 768);
+        padding-block-start: fluid(48, 88, 375, 768);
+        padding-block-end: fluid(56, 80, 375, 768);
+    }
+
+    &__title {
+        color: var(--clr-light);
+        font-size: var(--fs-location-h2-mob-tab);
+    }
+
+    &__address {
+        font-style: normal;
+    }
+
+    &__street {
+        font-family: var(--ff-primary);
+        font-size: var(--fs-location-street);
+        font-weight: var(--fw-2);
+        text-transform: uppercase;
+        color: var(--clr-primary);
+        line-height: 1;
+    }
+
+    &__desc {
+        max-inline-size: 29ch;
+    }
+}
