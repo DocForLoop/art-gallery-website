@@ -21,9 +21,9 @@
     --ff-secondary: 'Outfit', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --fs-home-h1-mob-tab: #{fluid(60, 70, 375, 768, rem)};//
     --fs-home-h1-desk: #{fluid(70, 96, 768, 1440, rem)};
-    --fs-home-h2: #{fluid(50, 60, 768, 1440, rem)};
+    --fs-home-h2: #{fluid(50, 60, 768, 1440, rem)};//
     --fs-body: #{fluid(18, 22, 768, 1440, rem)};//
-    --fs-footer: #{fluid(16, 18, 768, 1440, rem)};
+    --fs-footer: #{fluid(16, 18, 768, 1440, rem)};//
     --fs-btn: #{rem(20)};//
     --fs-location-h2-mob-tab: #{fluid(50, 55, 375, 768, rem)};
     --fs-location-h2-desk: #{fluid(55, 70, 768, 1440, rem)};
@@ -33,7 +33,7 @@
     --lh-h1-h2: 0.91;//
     --lh-h1-h2-desk: 1;
     --lh-body: #{fluid(28, 32, 768, 1440, rem)};//
-    --lh-footer: 1.625;
+    --lh-footer: 1.625;//
     --lh-footer-desk: 1.55;
     --ls-btn: #{rem(2.26)};//
 }

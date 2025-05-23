@@ -1,2 +1,62 @@
 @use '@scss/global/functions' as *;
 @use '@scss/global/mixins' as m;
+
+.footer {
+    background-color: var(--clr-dark);
+    padding-block: fluid(48, 56, 375, 768);
+    padding-inline: fluid(32, 40, 375, 768);
+    
+    &__logo {
+        align-self: flex-start;
+        
+        &:focus-visible {
+            outline: rem(2) solid var(--clr-light);
+            outline-offset: rem(3);
+        }
+    }
+    
+    &__logo-img {
+        inline-size: rem(110);
+        block-size: rem(40);
+    }
+    
+    &__desc {
+        color: var(--clr-light);
+        font-size: var(--fs-footer);
+        line-height: var(--lh-footer);
+        max-inline-size: 30ch;
+    }
+
+    &__social-item {
+        transition: transform 0.3s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    &__social-link {
+        color: var(--clr-light);
+        transition: color 0.3s;
+
+        &:focus-visible {
+            outline: rem(2) solid var(--clr-light);
+            outline-offset: rem(3);
+        }
+
+        &:hover, &:focus-visible {
+            color: var(--clr-primary);
+            
+        }
+    }
+
+    &__social-icon {
+        inline-size: rem(20);
+        block-size: rem(20);
+    }
+
+    &__social-icon--twitter {
+        inline-size: rem(20);
+        block-size: rem(17);
+    }
+}
