@@ -1,2 +1,66 @@
 @use '@scss/global/functions' as *;
 @use '@scss/global/mixins' as m;
+
+.gallery {
+    padding-inline: fluid(16, 40, 375, 768);
+
+    &__picture--interior {
+        grid-area: interior;
+        margin-block-end: 9px;
+    }
+
+    &__content--day {
+        grid-area: day;
+        margin-block-end: 16px;
+    }
+    
+    &__picture--bench {
+        grid-area: bench;
+    }
+
+    &__picture--hall {
+        grid-area: hall;
+    }
+
+    &__content--come {
+        grid-area: come;
+    }
+
+    &__img {
+        inline-size: 100%;
+        block-size: auto;
+    }
+
+    &__content--day {
+        justify-self: center;
+    }
+
+    &__content-title {
+        font-size: var(--fs-home-h2);
+    }
+
+    /* &__content-title--day {
+        max-inline-size: 11ch;
+    } */
+
+    &__content-desc--day {
+        max-inline-size: 30ch;
+        padding-inline-end: 11px;
+    }
+
+    &__content--come {
+        background-color: var(--clr-dark);
+        color: var(--clr-light);
+        padding-inline: fluid(24, 28, 375, 768);
+        padding-block: fluid(48, 85, 375, 768);
+    }
+
+    &__content-title--come {
+        color: var(--clr-light);
+        max-inline-size: 9ch;
+    }
+
+    &__content-desc--come {
+        max-inline-size: 25ch;
+    }
+}

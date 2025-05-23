@@ -1,1 +1,39 @@
 @use '@scss/global/functions' as *;
+
+.gallery {
+
+    &__grid {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-areas: 
+            "interior"
+            "day"
+            "bench"
+            "hall"
+            "come";
+        row-gap: 16px;
+    }
+
+    &__content--day {
+        display: flex;
+        flex-direction: column;
+        row-gap: fluid(21, 24, 375, 768);
+    }
+
+    &__content-title--day {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__content--come {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__content-inner {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+    }
+}
