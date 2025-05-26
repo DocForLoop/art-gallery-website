@@ -75,4 +75,28 @@
             block-size: rem(313);
         }
     }
+
+    .footer {
+        padding-block: fluid(56, 80, 768, 1440);
+        padding-inline: fluid(40, 165, 768, 1440);
+
+        &__content-wrapper {
+            flex-direction: row;
+            column-gap: fluid(133, 280, 768, 1440);
+        }
+
+        &__content {
+            flex-direction: row;
+            column-gap: fluid(65, 140, 768, 1440);
+        }
+
+        &__logo-img {
+            inline-size: fluid(110, 159.57, 768, 1440, rem);
+            block-size: fluid(40, 58, 768, 1440, rem);
+        }
+
+        &__desc {
+            max-inline-size: 27ch;
+        }
+    }
 }
