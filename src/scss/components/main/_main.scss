@@ -8,8 +8,9 @@
         grid-area: interior;
         margin-block-end: 9px;
     }
-
+    
     &__content--day {
+        justify-self: center;
         grid-area: day;
         margin-block-end: 16px;
     }
@@ -31,17 +32,9 @@
         block-size: auto;
     }
 
-    &__content--day {
-        justify-self: center;
-    }
-
     &__content-title {
         font-size: var(--fs-home-h2);
     }
-
-    /* &__content-title--day {
-        max-inline-size: 11ch;
-    } */
 
     &__content-desc--day {
         max-inline-size: 30ch;

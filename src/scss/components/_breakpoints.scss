@@ -27,4 +27,52 @@
             font-size: var(--fs-home-h1-desk);
         }
     }
+
+    .gallery {
+        display: grid;
+        place-items: center;
+
+        &__grid {
+            grid-template-rows: rem(400) rem(313) rem(396);
+            grid-template-columns: rem(278 - 11) rem(120) rem(280);
+            grid-template-areas: 
+                "day interior interior"
+                "bench bench hall"
+                "bench bench come";
+            gap: rem(11);
+        }
+
+        &__content--day {
+            margin-block-end: 0;
+        }
+
+        &__content-title--day {
+            max-inline-size: 11ch;
+        }
+
+        &__content-desc--day {
+            padding-inline-end: 0;
+            max-inline-size: 19ch;
+        }
+
+        &__picture--interior {
+            margin-block-end: 0;
+            margin-inline-start: 13px;
+        }
+
+        &__img--interior {
+            inline-size: rem(398);
+            block-size: rem(400);
+        }
+
+        &__img--bench {
+            inline-size: rem(398);
+            block-size: rem(720);
+        }
+
+        &__img--hall {
+            inline-size: rem(280);
+            block-size: rem(313);
+        }
+    }
 }
