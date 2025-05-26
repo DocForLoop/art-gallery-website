@@ -1,2 +1,30 @@
 @use '@scss/global/functions' as *;
 @use '@scss/global/mixins' as m;
+
+@media (width > em(768)) {
+
+    .hero {
+        flex-direction: row;
+        /* position: relative; */
+
+        &__decor {
+            display: block;
+            inline-size: fluid(0, 450, 768, 1440, rem);
+            block-size: rem(700)
+        }
+
+        &__img {
+            inline-size: rem(437);
+            block-size: rem(700);
+        }
+
+        &__content {
+            padding-inline: 0;
+            margin-inline-start: -54px;
+        }
+
+        &__title {
+            font-size: var(--fs-home-h1-desk);
+        }
+    }
+}
