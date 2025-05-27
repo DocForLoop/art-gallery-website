@@ -1,2 +1,39 @@
 @use '@scss/global/functions' as *;
 @use '@scss/global/mixins' as m;
+
+@media (width > em(768)) {
+
+    .location-page {
+    
+        & .location__map-content .link-btn {
+            inset-inline-start: fluid(39, 156, 768, 1440);
+        }
+    }
+
+    .location {
+
+        &__details {
+            padding-inline: fluid(40, 165, 768, 1440);
+            padding-block-start: fluid(88, 104, 768, 1440);
+            padding-block-end: fluid(80, 128, 768, 1440);
+        }
+
+        &__content {
+            flex-direction: row;
+            column-gap: fluid(60, 278, 768, 1440);
+        }
+
+        &__title {
+            font-size: var(--fs-location-h2-desk);
+            max-inline-size: 8ch;
+        }
+
+        &__info {
+            row-gap: fluid(20, 32, 768, 1440);
+        }
+
+        &__desc {
+            max-inline-size: 37ch;
+        }
+    }
+}
