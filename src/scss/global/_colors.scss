@@ -5,4 +5,11 @@
     --clr-light: hsl(0, 0%, 100%);
     --clr-map-circle: hsla(24, 56%, 63%, 0.6);
     --clr-map-fill: hsla(24, 56%, 63%, 0.1);
+    --clr-h1-grad: linear-gradient(
+        90deg,
+        var(--clr-light) 0%,
+        var(--clr-light) 60.3%,
+        var(--clr-dark) 60.3%,
+        var(--clr-dark) 100%
+        ); 
 }

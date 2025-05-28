@@ -5,11 +5,10 @@
 
     .hero {
         flex-direction: row;
-        /* position: relative; */
 
         &__decor {
             display: block;
-            inline-size: fluid(0, 450, 768, 1440, rem);
+            inline-size: fluid(0, 350, 768, 1200, rem);
             block-size: rem(700)
         }
 
@@ -25,6 +24,10 @@
 
         &__title {
             font-size: var(--fs-home-h1-desk);
+        }
+
+        &__text-group {
+            row-gap: fluid(48, 64, 768, 1440);
         }
     }
 
@@ -97,6 +100,45 @@
 
         &__desc {
             max-inline-size: 27ch;
+        }
+    }
+}
+
+@media (width > em(1200)) {
+
+    h2 {
+        line-height: var(--lh-h2-desk);
+    }
+
+    .hero {
+        position: relative;
+
+        &__decor {
+            inline-size: fluid(350, 450, 1200, 1440, rem);
+            block-size: rem(800);
+        }
+
+        &__img {
+            inline-size: rem(540);
+            block-size: rem(800);
+        }
+
+        &__content {
+            flex-direction: row;
+            column-gap: 273px;
+            position: absolute;
+            inset-block-start: 190px;
+            inset-inline-start: fluid(130, 202, 1200, 1440);
+        }
+
+        &__title {
+            color: transparent;
+            background-image: var(--clr-h1-grad);
+            background-clip: text;
+        }
+
+        &__desc {
+            max-inline-size: 24ch;
         }
     }
 }
