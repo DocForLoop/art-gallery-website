@@ -80,7 +80,6 @@
 
     .footer {
         padding-block: fluid(56, 80, 768, 1440);
-        padding-inline: fluid(40, 165, 768, 1440);
 
         &__content-wrapper {
             flex-direction: row;
@@ -185,6 +184,13 @@
 
         &__content-inner {
             row-gap: 32px;
+        }
+    }
+
+    .footer {
+        &__desc {
+            max-inline-size: 36ch;
+            line-height: var(--lh-footer-desk);
         }
     }
 }

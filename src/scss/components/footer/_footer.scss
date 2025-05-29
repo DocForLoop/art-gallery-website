@@ -8,6 +8,7 @@
     
     &__logo {
         align-self: flex-start;
+        flex-shrink: 0;
         
         &:focus-visible {
             outline: rem(2) solid var(--clr-light);
