@@ -1,6 +1,13 @@
 @use '@scss/global/functions' as *;
 @use '@scss/global/mixins' as m;
 
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 @media (width > em(768)) {
 
     .hero {

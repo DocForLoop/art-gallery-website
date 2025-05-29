@@ -65,7 +65,7 @@
     position: relative;
     
     &__map {
-        block-size: fluid(550, 600, 375, 768, rem);
+        block-size: rem(550);
 
         &:focus-visible {
           outline: rem(3) solid var(--clr-primary);
