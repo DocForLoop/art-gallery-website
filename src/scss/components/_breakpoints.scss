@@ -37,7 +37,7 @@
 
         &__grid {
             grid-template-rows: rem(400) rem(313) rem(396);
-            grid-template-columns: rem(278 - 11) rem(120) rem(280);
+            grid-template-columns: rem(280) rem(107) rem(280);
             grid-template-areas: 
                 "day interior interior"
                 "bench bench hall"
@@ -60,7 +60,6 @@
 
         &__picture--interior {
             margin-block-end: 0;
-            margin-inline-start: 13px;
         }
 
         &__img--interior {
@@ -139,6 +138,53 @@
 
         &__desc {
             max-inline-size: 24ch;
+        }
+    }
+
+    .gallery {
+
+        &__grid {
+            grid-template-rows: rem(400) rem(313) rem(377);
+            grid-template-columns: rem(445) rem(160) rem(445);
+            gap: 30px;
+        }
+
+        &__content--day {
+            row-gap: 32px;
+            justify-self: flex-start;
+            margin-block-start: 60px;
+        }
+
+        &__content-title--day {
+            display: block;
+        }
+
+        &__content-desc--day {
+            max-inline-size: 22ch;
+        }
+
+        &__img--interior {
+            inline-size: rem(635);
+            block-size: rem(400);
+        }
+
+        &__img--bench {
+            inline-size: rem(635);
+            block-size: rem(720);
+        }
+
+        &__img--hall {
+            inline-size: rem(445);
+            block-size: rem(313);
+        }
+
+        &__content--come {
+            padding-inline: 48px;
+            padding-block: 65px;
+        }
+
+        &__content-inner {
+            row-gap: 32px;
         }
     }
 }
