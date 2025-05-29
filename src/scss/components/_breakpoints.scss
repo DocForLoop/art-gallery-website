@@ -133,7 +133,7 @@
             column-gap: 273px;
             position: absolute;
             inset-block-start: 190px;
-            inset-inline-start: fluid(130, 202, 1200, 1440);
+            inset-inline-start: fluid(130, 202, 1200, 1440, rem);
         }
 
         &__title {
@@ -152,7 +152,7 @@
         &__grid {
             grid-template-rows: rem(400) rem(313) rem(377);
             grid-template-columns: rem(445) rem(160) rem(445);
-            gap: 30px;
+            gap: rem(30);
         }
 
         &__content--day {
