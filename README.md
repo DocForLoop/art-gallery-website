@@ -20,7 +20,7 @@ This is a solution to the [Art gallery website challenge on Frontend Mentor](htt
 
 ### Links
 
-- [Solution](https://www.frontendmentor.io/)
+- [Solution](https://www.frontendmentor.io/solutions/art-gallery-website-with-leaflet-UAyyo0PEli)
 - [Live Site](https://art-gallery-website-three-topaz.vercel.app/)
 
 ## My process
