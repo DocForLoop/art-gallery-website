@@ -17,7 +17,7 @@
             "headers": [
                 {
                     "key": "Content-Security-Policy",
-                    "value": "default-src 'self'; object-src 'none'; base-uri 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; frame-ancestors 'none';"
+                    "value": "default-src 'self'; object-src 'none'; base-uri 'none'; script-src 'self'; style-src 'self'; img-src 'self' data: https://a.tile.openstreetmap.org https://b.tile.openstreetmap.org https://c.tile.openstreetmap.org; frame-ancestors 'none';"
                 },
                 {
                     "key": "Strict-Transport-Security",
