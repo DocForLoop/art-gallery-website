@@ -13,4 +13,12 @@ export default defineConfig({
       plugins: [autoprefixer()],
     },
   },
+  build: {
+    rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, 'index.html'),
+        project: path.resolve(__dirname, 'location.html'),
+      },
+    },
+  },
 });

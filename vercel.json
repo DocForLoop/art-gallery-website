@@ -1,4 +1,7 @@
 {
+    "rewrites": [
+    { "source": "/location", "destination": "/location.html" }
+    ],
     "headers": [
         {
             "source": "/assets/:path*",
