@@ -1,6 +1,6 @@
 {
     "rewrites": [
-    { "source": "/location", "destination": "/location.html" }
+        { "source": "/location", "destination": "/location.html" }
     ],
     "headers": [
         {
