@@ -17,5 +17,23 @@
                 color: var(--clr-light);
             }
         }
+
+        &__attribution {
+            color: var(--clr-dark);
+        }
+
+        &__attribution-link {
+            color: var(--clr-dark);
+
+            &:hover,
+            &:focus-visible {
+                color: var(--clr-light);
+            }
+
+            &:focus-visible {
+                outline: rem(3) solid var(--clr-light);
+                outline-offset: rem(3);
+            }
+        }
     }
 }
